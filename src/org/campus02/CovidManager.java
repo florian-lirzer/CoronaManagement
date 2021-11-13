@@ -114,6 +114,7 @@ public class CovidManager {
     public static int getAverageValueAfter(ArrayList<Incidence> recordedValues, String date) {
         // Es soll der durchschnittliche Wert nach einem bestimmten Datum gefunden werden
         // date ist beispielsweise 2021-08-01
+
         return 0;
     }
 
@@ -121,6 +122,13 @@ public class CovidManager {
         // Es soll die Meldung (state/date) mit dem höchsten Wert gefunden werden
 
         
+        return null;
+    }
+
+    // zusatz
+    public static HashMap<String, ArrayList<Incidence>> getAllElementsByState(){
+        // Alle Elemente je Bundesland retour liefern
+
         return null;
     }
 }
