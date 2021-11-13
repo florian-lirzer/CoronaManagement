@@ -74,7 +74,7 @@ public class CovidManager {
         return totalIncidencesState;
     }
 
-    public static HashMap<String, Integer> groupByData(ArrayList<Incidence> recordedValues) {
+    public static HashMap<String, Integer> groupByDate(ArrayList<Incidence> recordedValues) {
         // Summe der Fälle je Tag
         return null;
     }
