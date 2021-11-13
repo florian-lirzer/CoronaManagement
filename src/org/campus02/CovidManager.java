@@ -52,6 +52,9 @@ public class CovidManager {
         System.out.println("groupByDate(recordedValues) = " + groupByDate(recordedValues));
 
         System.out.println("findHighestValue(recordedValues) = " + findHighestValue(recordedValues));
+
+        System.out.println("getAverageValueAfter(recordedValues, \"2021-10-01\") = " + getAverageValueAfter(recordedValues, "2021-10-01"));
+
     }
 
     public static HashMap<String, Integer> groupByState(ArrayList<Incidence> recordedValues) {
@@ -125,9 +128,6 @@ public class CovidManager {
             }
         }
         return sumValues / counter;
-
-
-        return 0;
     }
 
     public static Incidence findDayStateWithHighestValues(ArrayList<Incidence> recordedValues) {
