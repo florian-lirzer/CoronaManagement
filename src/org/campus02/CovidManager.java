@@ -111,9 +111,21 @@ public class CovidManager {
         return maxValue;
     }
 
-    public static int getAverageValueAfter(ArrayList<Incidence> recordedValues, String date) {
+    public static int getAverageValueAfter(
+            ArrayList<Incidence> recordedValues, String date) {
         // Es soll der durchschnittliche Wert nach einem bestimmten Datum gefunden werden
         // date ist beispielsweise 2021-08-01
+        int counter = 0;
+        int sumValues = 0;
+
+        for (Incidence oneElement : recordedValues) {
+            if (oneElement.getDate().compareTo(date) > 0) {
+                counter++;
+                sumValues += oneElement.getNumber();
+            }
+        }
+        return sumValues / counter;
+
 
         return 0;
     }
