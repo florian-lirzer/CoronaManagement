@@ -134,16 +134,15 @@ public class CovidManager {
 
     public static Incidence findDayStateWithHighestValues(ArrayList<Incidence> recordedValues) {
         // Es soll die Meldung (state/date) mit dem höchsten Wert gefunden werden
-        Incidence element = new Incidence("", "", 0);
         for (Incidence oneElement : recordedValues)
         {
-            if(oneElement.getNumber() > element.getNumber())
+            if(oneElement.getNumber() == findHighestValue(recordedValues))
             {
-                element = oneElement;
+                return oneElement;
             }
         }
         
-        return element;
+        return null;
     }
 
     // zusatz
