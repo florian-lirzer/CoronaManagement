@@ -126,8 +126,14 @@ public class CovidManager {
     }
 
     // zusatz
-    public static HashMap<String, ArrayList<Incidence>> getAllElementsByState(){
+    public static HashMap<String, ArrayList<Incidence>> getAllElementsByState(ArrayList<Incidence> recordedValues){
         // Alle Elemente je Bundesland retour liefern
+
+        return null;
+    }
+
+    public static ArrayList<Incidence> findValuesAbove(ArrayList<Incidence> recordedValues, int referenceValue){
+        // Alle Werte über dem Referenzwert sollen retour geliefert werden
 
         return null;
     }
