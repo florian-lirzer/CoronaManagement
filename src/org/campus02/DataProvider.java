@@ -12,7 +12,7 @@ public class DataProvider {
 
         ArrayList<Incidence> recordedValues = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(".\\coviddata.csv"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("coviddata.csv"))){
 
             String line = "";
             while ((line = br.readLine()) != null) {
